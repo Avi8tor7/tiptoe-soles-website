@@ -1,0 +1,134 @@
+/* General styles */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Logo - now placed inside the sidebar */
+#logo {
+    height: 100px;
+    display: block;
+    margin: 0 auto 20px auto;
+}
+
+/* Navigation Menu - left sidebar style with brown theme */
+nav {
+    width: 220px;
+    height: 100vh;
+    background-color: #8B4513;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding-top: 20px;
+    text-align: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+nav ul li {
+    margin-bottom: 10px;
+}
+
+nav ul li a {
+    display: block;
+    text-decoration: none;
+    color: white;
+    padding: 10px 15px;
+}
+
+nav ul li a.active,
+nav ul li a:hover {
+    background-color: #A0522D;
+}
+
+/* Main Content */
+main {
+    margin-left: 240px;
+    padding: 20px;
+}
+
+/* Footer */
+footer {
+    background-color: #8B4513;
+    color: white;
+    text-align: center;
+    padding: 10px;
+}
+
+footer a {
+    color: white;
+    text-decoration: none;
+    margin: 0 5px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+/* Hamburger button - hidden on desktop */
+.hamburger {
+    display: none;
+    background-color: #8B4513;
+    color: white;
+    padding: 10px 15px;
+    font-size: 20px;
+    border: none;
+    width: 100%;
+    text-align: left;
+}
+
+/* Responsive - when screen is 768px or smaller */
+@media screen and (max-width: 768px) {
+
+    nav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+
+    nav ul {
+        display: none; /* hide menu by default */
+        background-color: #8B4513;
+    }
+
+    nav ul li {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        padding: 10px;
+    }
+
+    .hamburger {
+        display: block;
+    }
+
+    main {
+        margin-left: 0;
+    }
+}
+
+/* Show menu when toggled */
+nav ul.show {
+    display: block;
+}
+.back-button {
+    display: inline-block;
+    background-color: #A0522D;
+    color: white;
+    padding: 8px 12px;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 20px;
+}
+
+.back-button:hover {
+    background-color: #8B4513;
+} 
